@@ -1,3 +1,12 @@
+@keyframes zoomIn{
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(100%);
+    }
+}
 *{
     padding: 0;
     margin: 0;
@@ -78,6 +87,12 @@ body{
     transition-duration: .5s;
 }
 .mobile-navLinks{
+    display: none;
+}
+.nav-btn{
+    display: none;
+}
+.close-nav-btn{
     display: none;
 }
 /* nav styling end here  */
@@ -495,6 +510,10 @@ body{
     margin-bottom: 10px;
 }
 /* section Eight end here */
+.show-links{
+    display: initial;
+    transition-duration: 1s;
+}
 /* main styling end here  */
 
 /* footer start here */
@@ -568,7 +587,7 @@ footer > div > div:nth-child(3) > ul > li > a{
         overflow-x: hidden;
     }
     body{
-        width: 90%;
+        width: 80%;
         margin: auto;
         padding: 20px;
     }
@@ -577,6 +596,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
+    margin: 0;
+
+
 }
 .nav-bar{
     display: flex;
@@ -593,6 +616,7 @@ nav{
     margin-right: 0px;
     padding-left: 20px;
     font-family: lora;
+   
 }
 
 .nav-links ul{
@@ -603,25 +627,34 @@ nav{
    display: none;
 }
 .nav-btn {
-    position: relative;
-    top: -35px;
+    display: initial;
+    position: absolute;
+    top: 45px;
 }
 .nav-btn > i{
     font-size: 1.5em;
 }
 .nav-btn > i:hover{
+  color: tomato;
+}
+.close-nav-btn{
+    /* display: initial; */
+    font-size: 1.5em;
+    position: absolute;
+       top: 45px;
     color: tomato;
 }
 .mobile-navLinks{
-    display: block;
     background-color: #ffffff;
     position: absolute;
-    /* overflow-y: scroll; */
     width: 100%;
     margin: auto;
     height: 100%;
     top: 110px;
+    text-align: center;
+    animation: zoomIn 1s;
     overflow-y: scroll;
+    z-index: 5;
 }
 .mobile-navLinks > ul > li{
     width: 100%;
@@ -631,6 +664,7 @@ nav{
     font-size: 2em;
     font-weight: 500;
     text-align: center;
+    padding-right: 50px;
 }
 .mobile-navLinks > ul > li > a{
   color: tomato;
@@ -646,5 +680,53 @@ nav{
 }
 
 /* nav styling end here  */
+
+/* hero styling start here  */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+.hero-img > img{
+    width: 100%;
+    border-top-right-radius: 20%;
+    position: relative;
+    top: -210px;
+}
+.hero-desc{
+    width: 100%;
+}
+.hero-desc > div:first-child{
+    font-size: 1.7em;
+}
+.hero-desc > h2{
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.hero-desc > p{
+    font-size: .9em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.hero-desc > p:nth-child(4){
+    position: relative;
+    bottom: -220px;
+}
+.hero-dec-btn > a{
+    padding: 10px 20px;
+    width: 40%;
+    position: relative;
+    bottom: -220px;
+}
+.hero-dec-btn > a:hover{
+    background-color: rgb(167, 91, 77);
+    transition-duration: .5s;
+}
+/* hero styling end here  */
 }
 /* media query end here  */
