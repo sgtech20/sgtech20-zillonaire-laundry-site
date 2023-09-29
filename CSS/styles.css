@@ -653,7 +653,7 @@ nav{
     top: 110px;
     text-align: center;
     animation: zoomIn 1s;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     z-index: 5;
 }
 .mobile-navLinks > ul > li{
