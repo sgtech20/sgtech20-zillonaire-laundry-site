@@ -641,7 +641,7 @@ nav{
     /* display: initial; */
     font-size: 1.5em;
     position: absolute;
-       top: 45px;
+    top: 45px;
     color: tomato;
 }
 .mobile-navLinks{
@@ -657,7 +657,7 @@ nav{
     z-index: 5;
 }
 .mobile-navLinks > ul > li{
-    width: 100%;
+    width: 90%;
     margin: auto;
     line-height: 1.5;
     list-style-type: none;
@@ -667,16 +667,16 @@ nav{
     padding-right: 50px;
 }
 .mobile-navLinks > ul > li > a{
-  color: tomato;
+    color: tomato;
     text-decoration: none;
 }
 .mobile-navLinks > ul > li > a:hover{
     border-bottom: 2px groove tomato;
-  transition-duration: 1s;
+    transition-duration: 1s;
 }
 .mobile-navLinks > ul > li > a > i{
-  font-size: .8em;
-  font-weight: normal;
+   font-size: .8em;
+   font-weight: normal;
 }
 
 /* nav styling end here  */
